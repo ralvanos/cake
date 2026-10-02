@@ -1,0 +1,41 @@
+# cake quote settings. Monthly prices use the currency below.
+# Edit these to the bills you actually pay. Plan prices change.
+
+[rates]
+hourly = 150
+hours_per_week = 30
+currency = "USD"
+# Employer loaded cost in the comparison. This is not the bid.
+salary = 140000
+overhead = 2.4
+
+[model]
+# Finished, accepted lines per focused hour with no AI tools.
+sloc_per_hour = 15
+# classic | review | pair | vibe
+preset = "pair"
+# Fraction of the unassisted-vs-AI labor gap to keep on a fixed bid.
+# 0.5 bills the midpoint. 0 bills AI time only. 1 bills the unassisted estimate.
+keep_savings = 0.5
+# Added on top of labor for warranty and leftover fixes.
+warranty = 0.15
+
+[subscriptions]
+"Cursor Pro" = 20
+"Claude Pro" = 20
+# "ChatGPT Plus" = 20
+# "GitHub Copilot" = 10
+# "API usage" = 40
+
+[traditional]
+# Per person, per month, comparison only. A stand-in for a paid git host and editor.
+# Not a live vendor price. One seat when staffing is under one person.
+toolchain_monthly = 24
+
+# Optional multipliers on code lines. 0 drops those lines from the bid.
+# A language name changes that language. A suffix prices files cake does not know.
+# # lines in a priced suffix count as comments.
+# [weights]
+# Markdown = 0
+# JSON = 0
+# ".properties" = 0.05

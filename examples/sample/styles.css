@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+}
+
+/* Quiet metadata under the title. */
+.card .meta {
+  color: #666;
+  font-size: 0.85rem;
+}
